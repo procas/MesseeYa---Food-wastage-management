@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+nav
+{
+display: inline-block;
+height: 50px;
+float: left;
+width: 1000px;
+}
+
+fieldset.title {
+    border-top: 1px solid #aaa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+}
+
+fieldset.title legend {
+    padding: 5px 10px;
+}
+
+#hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display:inline-block;
+  color: white;
+  padding: 0 .5em;
+  line-height: 0.5em;
+  color: #818078;
+  background-color: #ffffff;
+}
+#but
+{
+color: red;
+height: 50px;
+background: white;
+
+}
+</style>
+
+<head>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "styleForm.css" />
+<title>Member Login</title>
+<h1 align="center">Member Login</h1>
+<body onload>
+<form action="profile.html" value="submit">
+
+<!---
+<label>Name</label>
+<input name="name" placeholder="Type name here">
+--->
+<label>E-mail</label>
+<input name="email" type="email" placeholder="jondoe@example.com">
+<label>Password</label>
+<input name="pass" type="password" placeholder="Password">
+<button>Submit</button>
+<p style="color:blue"><u>Forgot Password?</u></p>
+
+
+<fieldset class="title">
+    <legend>Not a Member? <button id="but">Sign Up</button></legend>
+</fieldset>
+
+<!------
+<h1 style="color: #FF0000">Manager Login</h1>
+<body>
+<link rel="stylesheet" type="text/css" href="file:///Users/promamukherjee/Desktop/html/styleForm.css">
+<form>
+<label>Name</label>
+<input name="name" placeholder="Type name here">
+<label>E-mail</label>
+<input name="email" type="email" placeholder="jondoe@example.com">
+<label>Password</label>
+<input name="pass" type="password" placeholder="Password">
+<button>Submit</button>
+<p style="color:blue"><u>Forgot Password</u></p>
+------>
+
+
+
+<nav align="center" margin-top="40px">
+<p>Contact Us</p>
+<p>Home Page</p>
+</nav>
+
+</body>
+</head>
+</html>

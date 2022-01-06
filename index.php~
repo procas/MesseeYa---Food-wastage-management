@@ -1,0 +1,63 @@
+<?php
+/*
+* File name:   index.php
+
+* By: Proma Mukherjee
+
+* Date: 07-09-2017
+
+=========================
+
+*/
+echo "This is the first index page";
+echo "<br />";
+echo "<br />";
+echo "by Proma Mukherjee";
+echo "<br /> <br /> <br />";
+echo "<table>";
+	echo "<tr>";
+		echo "<td>ID</td>";
+		echo "<td>Company</td>";
+		echo "<td>Postcode</td>";
+	echo "</tr>";
+	echo "<tr>";
+		echo "<td>901</td>";
+		echo "<td>D.C.L</td>";
+		echo "<td>OSX29</td>";
+	echo "</tr>";
+	echo "<tr>";
+		echo "<td>801</td>";
+		echo "<td>Ashoke Steel</td>";
+		echo "<td>MS900</td>";
+	echo "</tr>";
+echo "</table>";
+
+
+
+
+$hostname = "localhost";
+
+$username = "root";
+
+$password= "";
+
+$databaseName = "alphacrm";
+
+$dbConnected = mysqli_connect($hostname, $username, $password, $databaseName, null);
+
+$dbSelected = mysqli_select_db($dbConnected, $databaseName);
+if($dbConnected)
+{
+	echo "<br /><br />MySQL Connected Ok<br /><br />";
+if($dbSelected)
+{
+	echo "DB Connected Ok<br /><br />";
+	
+	}else {
+		echo "DB Connection FAILED<br /><br />";
+		}
+}		else {
+			echo "MySQL connection FAILED<br /><br />";
+			}
+
+?> 

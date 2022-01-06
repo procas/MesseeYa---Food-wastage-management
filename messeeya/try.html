@@ -1,0 +1,46 @@
+<html>
+<script>
+
+function geolocate() {
+
+    if (navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(function (position) {
+        
+       var lat = position.coords.latitude;
+       var lng = position.coords.longitude;
+       
+       document.getElementById('lat').readOnly = true;
+       document.getElementById('lng').readOnly = true;
+       document.getElementById('lat').value = lat;
+       document.getElementById('lng').value = lng;
+       
+});
+
+}
+}
+</script>
+<style>
+textarea
+{
+height: 50px;
+width: 100px;
+}
+</style>
+<head>
+<title>Map Position</title>
+</head>
+<body onload="geolocate()">
+
+<form method="POST" action="latlng.php" value="submit">
+
+
+<textarea type="input/text" name="name" placeholder = "Name"></textarea>
+<textarea style="display: none" id="lat" name='lat' placeholder="latitude goes here"></textarea><br /><br />
+<textarea style="display: none" id="lng" name='lng' placeholder="longitude goes here"></textarea><br /><br />
+
+<button style="color: green">Submit</button>
+
+
+</body>
+</html>

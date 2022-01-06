@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>User Login</title>
+</head>
+<body>
+<form method="post" action="Login_Check.php">
+	<H1>User Login</h1>
+	User Name:<input type="text" name="uname" value=<?php echo Cookie_val(1) ?>><br>
+	Password:<input type="text" name="pwd" value=<?php echo Cookie_val(2) ?>><br>
+	
+	<input type="submit" value="Login">
+</form>
+</body>
+	<?php
+		function Cookie_val($ch){
+		if ($ch==1)
+		{	
+			if (isset($_COOKIE['UName']))
+			{
+				return $_COOKIE['UName'];
+			}
+			else 
+				return;
+		}
+		else
+		{
+			if (isset($_COOKIE['Pwd']))
+			{
+				return $_COOKIE['Pwd'];
+			}
+			else 
+				return;
+		}
+		}
+	?>
+</html>
