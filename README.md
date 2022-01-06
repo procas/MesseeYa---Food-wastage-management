@@ -5,8 +5,8 @@ for a quick grab of meal without being too concerned about what's on the menu. T
 It uses XAMPP engine to handle the DB hosting, PHP to handle client login and registration requests, in the frontend it makes use of HTML, CSS and Javascript for building the website.
 
   <p>
-<img src="Homepage.jpg" width="200" />
-<img src="About.jpg" width="200" />
-<img src="Sign up.jpg" width="200" />
+<img src="Homepage.png" width="200" />
+<img src="About.png" width="200" />
+<img src="Sign up.png" width="200" />
   </p>
   
